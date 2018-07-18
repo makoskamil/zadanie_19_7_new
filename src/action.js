@@ -29,18 +29,18 @@ function removeComment(id) {
 	}
 }
 
-function thumbUp(id) {
-	return{
-		type: THUMB_UP_COMMENT,
-		id
-	}
+function thumbUpComment(commentId) {
+  return {
+    type: THUMB_UP_COMMENT,
+    id: commentId
+  }
 }
 
-function thumbDown(id) {
-	return{
-		type: THUMB_DOWN_COMMENT,
-		id
-	}
+function thumbDownComment(commentId) {
+  return {
+    type: THUMB_DOWN_COMMENT,
+    id: commentId
+  }
 }
 
 export ADD_COMMENT;
@@ -53,7 +53,7 @@ export REMOVE_COMMENT;
 export removeComment;
 
 export THUMB_UP_COMMENT;
-export thumbUp;
+export thumbUpComment;
 
 export THUMB_DOWN_COMMENT;
-export thumbDown;
+export thumbDownComment;
