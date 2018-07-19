@@ -7,8 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import {addComment} from './actions';
-import DevTools from  './DevTools'
-const store = createStore(reducer, DevTools.instrument());
+const store = createStore(reducer);
 
 ReactDOM.render(
     <Provider store={store}>
